@@ -39,6 +39,15 @@ VALID_PARSE_URLS = (
         'protocol': 'https',
         'github': True,
     })),
+    ('HTTPS', ('https://github.com/foo-bar/xpwn/', {
+        'host': 'github.com',
+        'user': 'git',
+        'owner': 'foo-bar',
+        'repo': 'xpwn',
+
+        'protocol': 'https',
+        'github': True,
+    })),
     ('GIT', ('git://github.com/Org/Repo.git', {
         'host': 'github.com',
         'user': 'git',
@@ -49,6 +58,15 @@ VALID_PARSE_URLS = (
         'github': True,
     })),
     ('GIT', ('git://github.com/foo-bar/xpwn', {
+        'host': 'github.com',
+        'user': 'git',
+        'owner': 'foo-bar',
+        'repo': 'xpwn',
+
+        'protocol': 'git',
+        'github': True,
+    })),
+    ('GIT', ('git://github.com/foo-bar/xpwn/', {
         'host': 'github.com',
         'user': 'git',
         'owner': 'foo-bar',
